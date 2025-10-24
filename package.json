@@ -1,0 +1,64 @@
+{
+  "name": "ts-kickstart",
+  "version": "0.0.0-development",
+  "description": "A TypeScript kickstart template with ESLint, Prettier, and automated releases",
+  "type": "module",
+  "main": "./dist/bundle/index.cjs",
+  "module": "./dist/bundle/index.js",
+  "types": "./dist/bundle/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/bundle/index.d.ts",
+        "default": "./dist/bundle/index.js"
+      },
+      "require": {
+        "types": "./dist/bundle/index.d.cts",
+        "default": "./dist/bundle/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "npm run build:bundle && npm run build:native",
+    "build:bundle": "tsup",
+    "build:native": "npm run build:native:esm && npm run build:native:cjs",
+    "build:native:esm": "tsc -p tsconfig.esm.json",
+    "build:native:cjs": "tsc -p tsconfig.cjs.json",
+    "clean": "rimraf dist",
+    "lint": "eslint src/**/*.ts",
+    "lint:fix": "eslint src/**/*.ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "format:check": "prettier --check \"src/**/*.ts\"",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run clean && npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "typescript",
+    "eslint",
+    "prettier",
+    "template",
+    "kickstart",
+    "npm-package"
+  ],
+  "author": "月太げつたい🌸",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.38.0",
+    "@semantic-release/changelog": "^6.0.3",
+    "@semantic-release/git": "^10.0.1",
+    "@types/node": "^24.9.1",
+    "eslint": "^9.38.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "semantic-release": "^24.2.9",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.2"
+  }
+}
