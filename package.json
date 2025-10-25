@@ -28,6 +28,8 @@
     "build:native:esm": "tsc -p tsconfig.esm.json",
     "build:native:cjs": "tsc -p tsconfig.cjs.json",
     "clean": "rimraf dist",
+    "docs": "typedoc",
+    "docs:clean": "rimraf docs",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -58,6 +60,7 @@
     "rimraf": "^6.0.1",
     "semantic-release": "^24.2.9",
     "tsup": "^8.5.0",
+    "typedoc": "^0.28.14",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2"
   }
