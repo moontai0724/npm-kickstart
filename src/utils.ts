@@ -1,14 +1,4 @@
 /**
- * A simple utility function that adds two numbers
- * @param a - First number
- * @param b - Second number
- * @returns The sum of a and b
- */
-export function add(a: number, b: number): number {
-  return a + b;
-}
-
-/**
  * A simple utility function that multiplies two numbers
  * @param a - First number
  * @param b - Second number
