@@ -51,34 +51,34 @@ console.log(greet('World')); // Hello, World!
 ### Prerequisites
 
 - Node.js 18.x or higher
-- npm or pnpm
+- pnpm (recommended) or npm
 
 ### Setup
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Type check
-npm run typecheck
+pnpm run typecheck
 
 # Lint code
-npm run lint
+pnpm run lint
 
 # Fix linting issues
-npm run lint:fix
+pnpm run lint:fix
 
 # Format code
-npm run format
+pnpm run format
 
 # Check formatting
-npm run format:check
+pnpm run format:check
 
 # Build the project
-npm run build
+pnpm run build
 
 # Clean build artifacts
-npm run clean
+pnpm run clean
 ```
 
 ### Build Outputs

@@ -22,9 +22,9 @@
     "dist"
   ],
   "scripts": {
-    "build": "npm run build:bundle && npm run build:native",
+    "build": "pnpm run build:bundle && pnpm run build:native",
     "build:bundle": "tsup",
-    "build:native": "npm run build:native:esm && npm run build:native:cjs",
+    "build:native": "pnpm run build:native:esm && pnpm run build:native:cjs",
     "build:native:esm": "tsc -p tsconfig.esm.json",
     "build:native:cjs": "tsc -p tsconfig.cjs.json",
     "clean": "rimraf dist",
@@ -33,7 +33,7 @@
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
     "typecheck": "tsc --noEmit",
-    "prepublishOnly": "npm run clean && npm run build",
+    "prepublishOnly": "pnpm run clean && pnpm run build",
     "test": "echo \"No tests specified\" && exit 0"
   },
   "keywords": [

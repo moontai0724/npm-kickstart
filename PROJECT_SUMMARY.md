@@ -116,19 +116,19 @@ Three types of build outputs:
 - Explicit GitHub Actions permissions
 - No dependencies with known vulnerabilities
 
-## NPM Scripts
+## Scripts
 
 ```bash
-npm run build          # Build all outputs
-npm run build:bundle   # Build bundled version (minified)
-npm run build:native   # Build native ESM and CJS files
-npm run clean          # Remove build artifacts
-npm run lint           # Run ESLint
-npm run lint:fix       # Fix ESLint issues automatically
-npm run format         # Format code with Prettier
-npm run format:check   # Check code formatting
-npm run typecheck      # Run TypeScript type checking
-npm test               # Run tests (placeholder)
+pnpm run build          # Build all outputs
+pnpm run build:bundle   # Build bundled version (minified)
+pnpm run build:native   # Build native ESM and CJS files
+pnpm run clean          # Remove build artifacts
+pnpm run lint           # Run ESLint
+pnpm run lint:fix       # Fix ESLint issues automatically
+pnpm run format         # Format code with Prettier
+pnpm run format:check   # Check code formatting
+pnpm run typecheck      # Run TypeScript type checking
+pnpm test               # Run tests (placeholder)
 ```
 
 ## Package Information

@@ -12,7 +12,7 @@ cd ts-kickstart
 
 2. Install dependencies:
 ```bash
-npm install
+pnpm install
 ```
 
 3. Create a new branch for your feature or bugfix:
@@ -30,38 +30,38 @@ This project uses ESLint and Prettier for code quality and formatting:
 
 ```bash
 # Check linting
-npm run lint
+pnpm run lint
 
 # Fix linting issues automatically
-npm run lint:fix
+pnpm run lint:fix
 
 # Format code
-npm run format
+pnpm run format
 
 # Check formatting
-npm run format:check
+pnpm run format:check
 ```
 
 ### Type Checking
 
 ```bash
-npm run typecheck
+pnpm run typecheck
 ```
 
 ### Building
 
 ```bash
 # Build all outputs
-npm run build
+pnpm run build
 
 # Build only bundled version
-npm run build:bundle
+pnpm run build:bundle
 
 # Build only native files
-npm run build:native
+pnpm run build:native
 
 # Clean build artifacts
-npm run clean
+pnpm run clean
 ```
 
 ## Commit Messages
@@ -113,11 +113,11 @@ feat!: change API to use object parameters
 
 1. Ensure your code passes all checks:
    ```bash
-   npm run typecheck
-   npm run lint
-   npm run format:check
-   npm run build
-   npm test
+   pnpm run typecheck
+   pnpm run lint
+   pnpm run format:check
+   pnpm run build
+   pnpm test
    ```
 
 2. Update documentation if needed
