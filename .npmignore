@@ -1,0 +1,19 @@
+# Source files
+src/
+tsconfig*.json
+tsup.config.ts
+
+# Config files
+.github/
+.prettierrc
+.prettierignore
+.releaserc.json
+eslint.config.mjs
+
+# Development files
+examples/
+*.log
+.DS_Store
+
+# Only publish dist folder
+!dist/
