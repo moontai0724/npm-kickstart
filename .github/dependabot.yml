@@ -8,16 +8,21 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "UTC"
     open-pull-requests-limit: 5
     commit-message:
-      prefix: "chore(deps)"
+      prefix: "build"
       include: "scope"
-    labels:
-      - "dependencies"
-      - "npm"
+    groups:
+      prod-dependencies:
+        dependency-type: "production"
+        update-types:
+          - "minor"
+          - "patch"
+      dev-dependencies:
+        dependency-type: "development"
+        update-types:
+          - "minor"
+          - "patch"
     reviewers:
       - "moontai0724"
 
@@ -26,15 +31,12 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
-      day: "monday"
-      time: "09:00"
-      timezone: "UTC"
     open-pull-requests-limit: 5
     commit-message:
-      prefix: "chore(ci)"
+      prefix: "ci"
       include: "scope"
-    labels:
-      - "dependencies"
-      - "github-actions"
+    groups:
+      all-actions:
+        patterns: [ "*" ]
     reviewers:
       - "moontai0724"
