@@ -16,6 +16,24 @@
         "types": "./dist/bundle/index.d.cts",
         "default": "./dist/bundle/index.cjs"
       }
+    },
+    "./bundle": {
+      "import": {
+        "types": "./dist/bundle/index.d.ts",
+        "default": "./dist/bundle/index.js"
+      },
+      "require": {
+        "types": "./dist/bundle/index.d.cts",
+        "default": "./dist/bundle/index.cjs"
+      }
+    },
+    "./esm": {
+      "types": "./dist/esm/index.d.ts",
+      "default": "./dist/esm/index.js"
+    },
+    "./cjs": {
+      "types": "./dist/cjs/index.d.ts",
+      "default": "./dist/cjs/index.js"
     }
   },
   "files": [
