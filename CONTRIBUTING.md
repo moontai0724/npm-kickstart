@@ -6,8 +6,8 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 1. Fork and clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/ts-kickstart.git
-cd ts-kickstart
+git clone https://github.com/YOUR_USERNAME/npm-kickstart.git
+cd npm-kickstart
 ```
 
 2. Install dependencies:
