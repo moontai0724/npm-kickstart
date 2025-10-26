@@ -2,9 +2,9 @@
 
 A modern TypeScript project template with ESLint, Prettier, and automated releases.
 
-[![CI](https://github.com/moontai0724/ts-kickstart/actions/workflows/ci.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/ci.yml)
-[![Release](https://github.com/moontai0724/ts-kickstart/actions/workflows/release.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/release.yml)
-[![Documentation](https://github.com/moontai0724/ts-kickstart/actions/workflows/docs.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/docs.yml)
+[![CI](https://github.com/moontai0724/npm-kickstart/actions/workflows/ci.yml/badge.svg)](https://github.com/moontai0724/npm-kickstart/actions/workflows/ci.yml)
+[![Release](https://github.com/moontai0724/npm-kickstart/actions/workflows/release.yml/badge.svg)](https://github.com/moontai0724/npm-kickstart/actions/workflows/release.yml)
+[![Documentation](https://github.com/moontai0724/npm-kickstart/actions/workflows/docs.yml/badge.svg)](https://github.com/moontai0724/npm-kickstart/actions/workflows/docs.yml)
 [![codecov](https://codecov.io/gh/moontai0724/npm-kickstart/branch/main/graph/badge.svg)](https://codecov.io/gh/moontai0724/npm-kickstart)
 
 ## Features
@@ -126,7 +126,7 @@ Coverage reports are automatically generated and uploaded to [Codecov](https://c
 
 ### Prerequisites
 
-- Node.js 18.x or higher
+- Node.js 20.x or higher
 - pnpm (recommended) or npm
 
 ### Setup
@@ -259,7 +259,7 @@ The CI workflow runs on every push and pull request:
 5. Running tests with coverage
 6. Uploading coverage to Codecov
 
-Tested on Node.js versions: 18.x, 20.x, 22.x
+Tested on Node.js versions: 20.x, 22.x
 
 ### Continuous Deployment
 

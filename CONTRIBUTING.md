@@ -6,8 +6,8 @@ Thank you for your interest in contributing! This document provides guidelines f
 
 1. Fork and clone the repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/ts-kickstart.git
-cd ts-kickstart
+git clone https://github.com/YOUR_USERNAME/npm-kickstart.git
+cd npm-kickstart
 ```
 
 2. Install dependencies:
@@ -130,11 +130,35 @@ feat!: change API to use object parameters
 
 ## Testing
 
-Currently, this is a template project without tests. If you're adding tests:
+This project uses [Vitest](https://vitest.dev/) for testing. Tests are included and should be run before submitting a PR.
 
-1. Place test files next to source files with `.test.ts` or `.spec.ts` extension
-2. Update the test script in `package.json`
-3. Ensure tests pass before submitting PR
+### Test Structure
+
+- **Unit Tests** (`.spec.ts`): Located alongside source files in `src/`
+- **E2E Tests** (`.test.ts`): Located in `tests/e2e/`
+- **Test Utilities**: Shared helpers in `tests/utils/`
+
+### Running Tests
+
+```bash
+# Run all tests once
+pnpm test
+
+# Run tests in watch mode
+pnpm run test:watch
+
+# Run tests with interactive UI
+pnpm run test:ui
+
+# Run tests with coverage report
+pnpm run test:coverage
+```
+
+When adding new features or fixing bugs:
+1. Place unit test files next to source files with `.spec.ts` extension
+2. Place integration tests in `tests/e2e/` with `.test.ts` extension
+3. Ensure all tests pass before submitting PR
+4. Aim to maintain 100% code coverage
 
 ## Release Process
 

@@ -62,7 +62,7 @@ Three types of build outputs:
 
 #### CI Workflow (`.github/workflows/ci.yml`)
 - Triggers: Push to main, pull requests
-- Tests on: Node.js 18.x, 20.x, 22.x
+- Tests on: Node.js 20.x, 22.x
 - Steps:
   1. Type checking
   2. Linting
@@ -83,7 +83,7 @@ Three types of build outputs:
   6. Publish to NPM
 
 ### 7. Semantic Release Configuration ✅
-- **Version**: semantic-release 24.2.9
+- **Version**: semantic-release 25.0.1
 - **Plugins**:
   - Commit analyzer (conventional commits)
   - Release notes generator
@@ -128,7 +128,12 @@ pnpm run lint:fix       # Fix ESLint issues automatically
 pnpm run format         # Format code with Prettier
 pnpm run format:check   # Check code formatting
 pnpm run typecheck      # Run TypeScript type checking
-pnpm test               # Run tests (placeholder)
+pnpm test               # Run tests
+pnpm run test:watch     # Run tests in watch mode
+pnpm run test:ui        # Run tests with interactive UI
+pnpm run test:coverage  # Run tests with coverage report
+pnpm run docs           # Generate documentation
+pnpm run docs:clean     # Remove documentation artifacts
 ```
 
 ## Package Information
