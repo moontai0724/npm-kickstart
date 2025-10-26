@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { add, sum, multiply, greet, VERSION } from "../../src/index.js";
 import { randomInt, randomNumberArray, testFixtures } from "../utils/test-helpers.js";
 

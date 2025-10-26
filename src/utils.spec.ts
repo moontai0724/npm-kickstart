@@ -1,4 +1,3 @@
-import { describe, it, expect } from "vitest";
 import { multiply, greet } from "./utils.js";
 
 describe("multiply", () => {
