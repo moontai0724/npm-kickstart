@@ -4,6 +4,7 @@ A modern TypeScript project template with ESLint, Prettier, and automated releas
 
 [![CI](https://github.com/moontai0724/ts-kickstart/actions/workflows/ci.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/ci.yml)
 [![Release](https://github.com/moontai0724/ts-kickstart/actions/workflows/release.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/release.yml)
+[![Documentation](https://github.com/moontai0724/ts-kickstart/actions/workflows/docs.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/docs.yml)
 
 ## Features
 
@@ -17,6 +18,7 @@ A modern TypeScript project template with ESLint, Prettier, and automated releas
 - 🚀 **GitHub Actions** - Automated CI/CD pipeline
 - 📝 **Semantic Release** - Automated versioning and changelog generation based on conventional commits
 - 🔄 **Auto Publish** - Automatic NPM package publishing and GitHub releases
+- 📚 **TypeDoc** - Automated API documentation generation and publishing to GitHub Pages
 
 ## Installation
 
@@ -45,6 +47,33 @@ console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
 console.log(greet('World')); // Hello, World!
 ```
+
+## Documentation
+
+API documentation is automatically generated using [TypeDoc](https://typedoc.org/) and published to GitHub Pages.
+
+- **View the latest documentation**: [GitHub Pages](https://moontai0724.github.io/npm-kickstart/)
+
+### Generating Documentation Locally
+
+```bash
+# Generate documentation
+pnpm run docs
+
+# Clean documentation
+pnpm run docs:clean
+```
+
+The generated documentation will be in the `docs/` directory. Open `docs/index.html` in your browser to view it.
+
+### Documentation in PRs
+
+When you create a pull request, the documentation preview workflow will automatically:
+1. Generate documentation for your changes
+2. Upload it as an artifact
+3. Post a comment with a download link
+
+This allows reviewers to see how your changes affect the API documentation before merging.
 
 ## Development
 
@@ -77,6 +106,9 @@ pnpm run format:check
 # Build the project
 pnpm run build
 
+# Generate documentation
+pnpm run docs
+
 # Clean build artifacts
 pnpm run clean
 ```
@@ -101,6 +133,8 @@ ts-kickstart/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml          # CI workflow
+│       ├── docs.yml        # Documentation publishing
+│       ├── docs-preview.yml # PR documentation preview
 │       └── release.yml     # Release and publish workflow
 ├── src/
 │   ├── index.ts            # Main entry point
@@ -114,6 +148,7 @@ ts-kickstart/
 ├── tsconfig.esm.json       # ESM build config
 ├── tsconfig.cjs.json       # CommonJS build config
 ├── tsup.config.ts          # Bundler configuration
+├── typedoc.json            # TypeDoc configuration
 ├── package.json
 ├── LICENSE
 └── README.md

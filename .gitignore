@@ -9,6 +9,9 @@ build/
 lib/
 *.tsbuildinfo
 
+# Documentation
+docs/
+
 # Testing
 coverage/
 
