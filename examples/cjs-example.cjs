@@ -1,5 +1,5 @@
 // CommonJS Example
-const { add, multiply, greet, VERSION } = require('ts-kickstart');
+const { add, multiply, greet, VERSION } = require('npm-kickstart');
 
 console.log('=== CommonJS Example ===');
 console.log(`Package version: ${VERSION}`);

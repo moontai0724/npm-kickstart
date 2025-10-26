@@ -1,5 +1,5 @@
 // ESM Example - Using ES Modules
-import { add, multiply, greet, VERSION } from 'ts-kickstart';
+import { add, multiply, greet, VERSION } from 'npm-kickstart';
 
 console.log('=== ESM Example ===');
 console.log(`Package version: ${VERSION}`);

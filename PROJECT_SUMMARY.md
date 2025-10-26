@@ -1,4 +1,4 @@
-# Project Summary: ts-kickstart
+# Project Summary: npm-kickstart
 
 ## Overview
 A complete TypeScript project template with modern tooling for building NPM packages that support both browser and Node.js environments.
@@ -138,7 +138,7 @@ pnpm run docs:clean     # Remove documentation artifacts
 
 ## Package Information
 
-- **Name**: ts-kickstart
+- **Name**: npm-kickstart
 - **Version**: 0.0.0-development (managed by semantic-release)
 - **License**: MIT
 - **Author**: 月太げつたい🌸
@@ -154,17 +154,17 @@ To enable automated NPM publishing:
 
 ### Installation
 ```bash
-npm install ts-kickstart
+npm install npm-kickstart
 ```
 
 ### ESM
 ```typescript
-import { add, multiply, greet } from 'ts-kickstart';
+import { add, multiply, greet } from 'npm-kickstart';
 ```
 
 ### CommonJS
 ```javascript
-const { add, multiply, greet } = require('ts-kickstart');
+const { add, multiply, greet } = require('npm-kickstart');
 ```
 
 ## Verification Status

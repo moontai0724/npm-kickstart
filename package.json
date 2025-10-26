@@ -1,7 +1,7 @@
 {
-  "name": "ts-kickstart",
+  "name": "npm-kickstart",
   "version": "0.0.0-development",
-  "description": "A TypeScript kickstart template with ESLint, Prettier, and automated releases",
+  "description": "A TypeScript NPM package kickstart template with ESLint, Prettier, and automated releases",
   "type": "module",
   "main": "./dist/bundle/index.cjs",
   "module": "./dist/bundle/index.js",

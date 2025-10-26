@@ -3,7 +3,7 @@
   "entryPoints": ["src/index.ts"],
   "out": "docs",
   "plugin": [],
-  "name": "ts-kickstart",
+  "name": "npm-kickstart",
   "readme": "README.md",
   "includeVersion": true,
   "excludePrivate": true,

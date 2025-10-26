@@ -1,6 +1,6 @@
 # Examples
 
-This directory contains usage examples for the ts-kickstart package.
+This directory contains usage examples for the npm-kickstart package.
 
 ## Running Examples
 
@@ -31,7 +31,7 @@ For browser usage, you can use the bundled version with a CDN or bundler:
 ### With a Bundler (Webpack, Vite, etc.)
 
 ```typescript
-import { add, multiply, greet } from 'ts-kickstart';
+import { add, multiply, greet } from 'npm-kickstart';
 
 document.getElementById('result').textContent = greet('Browser User');
 ```
@@ -40,7 +40,7 @@ document.getElementById('result').textContent = greet('Browser User');
 
 ```html
 <script type="module">
-  import { add, multiply, greet } from 'https://unpkg.com/ts-kickstart';
+  import { add, multiply, greet } from 'https://unpkg.com/npm-kickstart';
   
   console.log(greet('World'));
   document.body.innerHTML = `<h1>${greet('Browser')}</h1>`;

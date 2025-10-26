@@ -1,4 +1,4 @@
-# ts-kickstart
+# npm-kickstart
 
 A modern TypeScript project template with ESLint, Prettier, and automated releases.
 
@@ -25,7 +25,7 @@ A modern TypeScript project template with ESLint, Prettier, and automated releas
 ## Installation
 
 ```bash
-npm install ts-kickstart
+npm install npm-kickstart
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ npm install ts-kickstart
 ### ESM (ES Modules)
 
 ```typescript
-import { add, multiply, greet } from 'ts-kickstart';
+import { add, multiply, greet } from 'npm-kickstart';
 
 console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
@@ -43,7 +43,7 @@ console.log(greet('World')); // Hello, World!
 ### CommonJS
 
 ```javascript
-const { add, multiply, greet } = require('ts-kickstart');
+const { add, multiply, greet } = require('npm-kickstart');
 
 console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
@@ -188,7 +188,7 @@ The project generates multiple build outputs:
 ## Project Structure
 
 ```
-ts-kickstart/
+npm-kickstart/
 ├── .github/
 │   └── workflows/
 │       ├── ci.yml          # CI workflow with tests
