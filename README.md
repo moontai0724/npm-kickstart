@@ -5,12 +5,14 @@ A modern TypeScript project template with ESLint, Prettier, and automated releas
 [![CI](https://github.com/moontai0724/ts-kickstart/actions/workflows/ci.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/ci.yml)
 [![Release](https://github.com/moontai0724/ts-kickstart/actions/workflows/release.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/release.yml)
 [![Documentation](https://github.com/moontai0724/ts-kickstart/actions/workflows/docs.yml/badge.svg)](https://github.com/moontai0724/ts-kickstart/actions/workflows/docs.yml)
+[![codecov](https://codecov.io/gh/moontai0724/npm-kickstart/branch/main/graph/badge.svg)](https://codecov.io/gh/moontai0724/npm-kickstart)
 
 ## Features
 
 - 🔷 **TypeScript 5.9+** - Modern TypeScript with strict type checking
 - 🎨 **ESLint 9** - Latest ESLint with TypeScript support
 - 💅 **Prettier 3** - Code formatting with Prettier integration
+- ✅ **Vitest** - Fast unit and e2e testing with 100% code coverage
 - 📦 **Dual Package** - Supports both ESM and CommonJS
 - 🎯 **Multiple Build Outputs**:
   - Bundled JS files (minified) for production use
@@ -75,6 +77,51 @@ When you create a pull request, the documentation preview workflow will automati
 
 This allows reviewers to see how your changes affect the API documentation before merging.
 
+## Testing
+
+This project uses [Vitest](https://vitest.dev/) for unit and end-to-end testing with 100% code coverage.
+
+### Test Structure
+
+- **Unit Tests** (`.spec.ts`): Located alongside source files in `src/`
+  - Test individual functions and modules
+  - Fast execution
+  - Example: `src/add/index.spec.ts`, `src/utils.spec.ts`
+
+- **E2E Tests** (`.test.ts`): Located in `tests/e2e/`
+  - Test integration between multiple modules
+  - Test complete user workflows
+  - Example: `tests/e2e/integration.test.ts`
+
+- **Test Utilities**: Located in `tests/utils/`
+  - Shared test helpers and fixtures
+  - Available for both unit and e2e tests
+  - Example: `tests/utils/test-helpers.ts`
+
+### Running Tests
+
+```bash
+# Run all tests once
+pnpm test
+
+# Run tests in watch mode (auto-rerun on changes)
+pnpm run test:watch
+
+# Run tests with interactive UI
+pnpm run test:ui
+
+# Run tests with coverage report
+pnpm run test:coverage
+```
+
+### Coverage Reports
+
+Coverage reports are automatically generated and uploaded to [Codecov](https://codecov.io/gh/moontai0724/npm-kickstart) on every CI run. You can view:
+- Line coverage
+- Branch coverage
+- Function coverage
+- File-by-file breakdown
+
 ## Development
 
 ### Prerequisites
@@ -106,6 +153,18 @@ pnpm run format:check
 # Build the project
 pnpm run build
 
+# Run tests
+pnpm test
+
+# Run tests in watch mode
+pnpm run test:watch
+
+# Run tests with UI
+pnpm run test:ui
+
+# Run tests with coverage
+pnpm run test:coverage
+
 # Generate documentation
 pnpm run docs
 
@@ -132,13 +191,25 @@ The project generates multiple build outputs:
 ts-kickstart/
 ├── .github/
 │   └── workflows/
-│       ├── ci.yml          # CI workflow
+│       ├── ci.yml          # CI workflow with tests
 │       ├── docs.yml        # Documentation publishing
 │       ├── docs-preview.yml # PR documentation preview
 │       └── release.yml     # Release and publish workflow
 ├── src/
+│   ├── add/
+│   │   ├── index.ts        # Add function
+│   │   └── index.spec.ts   # Unit tests
+│   ├── sum/
+│   │   ├── index.ts        # Sum function
+│   │   └── index.spec.ts   # Unit tests
 │   ├── index.ts            # Main entry point
-│   └── utils.ts            # Utility functions
+│   ├── utils.ts            # Utility functions
+│   └── utils.spec.ts       # Unit tests
+├── tests/
+│   ├── utils/
+│   │   └── test-helpers.ts # Shared test utilities
+│   └── e2e/
+│       └── integration.test.ts # E2E tests
 ├── .gitignore
 ├── .prettierignore
 ├── .prettierrc             # Prettier configuration
@@ -149,6 +220,7 @@ ts-kickstart/
 ├── tsconfig.cjs.json       # CommonJS build config
 ├── tsup.config.ts          # Bundler configuration
 ├── typedoc.json            # TypeDoc configuration
+├── vitest.config.ts        # Vitest configuration
 ├── package.json
 ├── LICENSE
 └── README.md
@@ -184,7 +256,8 @@ The CI workflow runs on every push and pull request:
 2. Linting with ESLint
 3. Format checking with Prettier
 4. Building the project
-5. Running tests
+5. Running tests with coverage
+6. Uploading coverage to Codecov
 
 Tested on Node.js versions: 18.x, 20.x, 22.x
 

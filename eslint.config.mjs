@@ -7,9 +7,20 @@ export default tseslint.config(
   ...tseslint.configs.recommendedTypeChecked,
   prettierConfig,
   {
+    files: ['src/**/*.ts'],
+    ignores: ['**/*.spec.ts', '**/*.test.ts'],
     languageOptions: {
       parserOptions: {
         projectService: true,
+        tsconfigRootDir: import.meta.dirname,
+      },
+    },
+  },
+  {
+    files: ['**/*.spec.ts', 'tests/**/*.ts'],
+    languageOptions: {
+      parserOptions: {
+        project: './tsconfig.test.json',
         tsconfigRootDir: import.meta.dirname,
       },
     },
