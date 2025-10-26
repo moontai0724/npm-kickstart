@@ -128,7 +128,12 @@ pnpm run lint:fix       # Fix ESLint issues automatically
 pnpm run format         # Format code with Prettier
 pnpm run format:check   # Check code formatting
 pnpm run typecheck      # Run TypeScript type checking
-pnpm test               # Run tests (placeholder)
+pnpm test               # Run tests
+pnpm run test:watch     # Run tests in watch mode
+pnpm run test:ui        # Run tests with interactive UI
+pnpm run test:coverage  # Run tests with coverage report
+pnpm run docs           # Generate documentation
+pnpm run docs:clean     # Remove documentation artifacts
 ```
 
 ## Package Information
