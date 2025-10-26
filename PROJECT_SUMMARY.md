@@ -83,7 +83,7 @@ Three types of build outputs:
   6. Publish to NPM
 
 ### 7. Semantic Release Configuration ✅
-- **Version**: semantic-release 24.2.9
+- **Version**: semantic-release 25.0.1
 - **Plugins**:
   - Commit analyzer (conventional commits)
   - Release notes generator

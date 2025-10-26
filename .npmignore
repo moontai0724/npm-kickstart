@@ -9,9 +9,14 @@ tsup.config.ts
 .prettierignore
 .releaserc.json
 eslint.config.mjs
+vitest.config.ts
+typedoc.json
 
 # Development files
+tests/
 examples/
+coverage/
+docs/
 *.log
 .DS_Store
 
