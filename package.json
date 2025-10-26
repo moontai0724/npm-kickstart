@@ -9,12 +9,12 @@
   "exports": {
     ".": {
       "import": {
-        "types": "./dist/bundle/index.d.ts",
-        "default": "./dist/bundle/index.js"
+        "types": "./dist/esm/index.d.ts",
+        "default": "./dist/esm/index.js"
       },
       "require": {
-        "types": "./dist/bundle/index.d.cts",
-        "default": "./dist/bundle/index.cjs"
+        "types": "./dist/cjs/index.d.ts",
+        "default": "./dist/cjs/index.js"
       }
     }
   },
