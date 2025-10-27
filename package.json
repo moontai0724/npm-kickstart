@@ -34,7 +34,7 @@
     "lint:fix": "eslint src/**/*.ts --fix",
     "format": "prettier --write \"src/**/*.ts\"",
     "format:check": "prettier --check \"src/**/*.ts\"",
-    "typecheck": "tsc --noEmit",
+    "typecheck": "tsc -p src/tsconfig.json --noEmit",
     "prepublishOnly": "pnpm run clean && pnpm run build",
     "test": "vitest run",
     "test:watch": "vitest",
