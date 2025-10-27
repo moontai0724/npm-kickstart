@@ -56,8 +56,8 @@
     "@semantic-release/changelog": "^6.0.3",
     "@semantic-release/git": "^10.0.1",
     "@types/node": "^24.9.1",
-    "@vitest/coverage-v8": "^4.0.3",
-    "@vitest/ui": "^4.0.3",
+    "@vitest/coverage-v8": "^4.0.4",
+    "@vitest/ui": "^4.0.4",
     "eslint": "^9.38.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-prettier": "^5.5.4",
@@ -67,6 +67,6 @@
     "typedoc": "^0.28.14",
     "typescript": "^5.9.3",
     "typescript-eslint": "^8.46.2",
-    "vitest": "^4.0.3"
+    "vitest": "^4.0.4"
   }
 }
