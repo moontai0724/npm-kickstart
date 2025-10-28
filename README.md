@@ -284,6 +284,14 @@ To enable NPM publishing, add your NPM token as a secret in GitHub:
 2. Add a new secret named `NPM_TOKEN`
 3. Value should be your NPM automation token
 
+### Codecov
+
+Codecov is used for code coverage reporting. To enable Codecov:
+
+1. Go to the [Codecov website](https://codecov.io) and sign in with GitHub
+2. Click on "Configure" for your repository to get the token
+3. Add a new secret named `CODECOV_TOKEN` in your GitHub repository settings
+
 ### GitHub Releases
 
 GitHub releases are automatically created using the `GITHUB_TOKEN` provided by GitHub Actions.
