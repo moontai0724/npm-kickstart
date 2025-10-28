@@ -5,17 +5,20 @@ Thank you for your interest in contributing! This document provides guidelines f
 ## Development Setup
 
 1. Fork and clone the repository:
+
 ```bash
 git clone https://github.com/YOUR_USERNAME/npm-kickstart.git
 cd npm-kickstart
 ```
 
 2. Install dependencies:
+
 ```bash
 pnpm install
 ```
 
 3. Create a new branch for your feature or bugfix:
+
 ```bash
 git checkout -b feat/your-feature-name
 # or
@@ -112,6 +115,7 @@ feat!: change API to use object parameters
 ## Pull Request Process
 
 1. Ensure your code passes all checks:
+
    ```bash
    pnpm run typecheck
    pnpm run lint
@@ -155,6 +159,7 @@ pnpm run test:coverage
 ```
 
 When adding new features or fixing bugs:
+
 1. Place unit test files next to source files with `.spec.ts` extension
 2. Place integration tests in `tests/e2e/` with `.test.ts` extension
 3. Ensure all tests pass before submitting PR

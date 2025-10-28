@@ -33,21 +33,21 @@ npm install npm-kickstart
 ### ESM (ES Modules)
 
 ```typescript
-import { add, multiply, greet } from 'npm-kickstart';
+import { add, multiply, greet } from "npm-kickstart";
 
 console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
-console.log(greet('World')); // Hello, World!
+console.log(greet("World")); // Hello, World!
 ```
 
 ### CommonJS
 
 ```javascript
-const { add, multiply, greet } = require('npm-kickstart');
+const { add, multiply, greet } = require("npm-kickstart");
 
 console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
-console.log(greet('World')); // Hello, World!
+console.log(greet("World")); // Hello, World!
 ```
 
 ## Documentation
@@ -71,6 +71,7 @@ The generated documentation will be in the `docs/` directory. Open `docs/index.h
 ### Documentation in PRs
 
 When you create a pull request, the documentation preview workflow will automatically:
+
 1. Generate documentation for your changes
 2. Upload it as an artifact
 3. Post a comment with a download link
@@ -117,6 +118,7 @@ pnpm run test:coverage
 ### Coverage Reports
 
 Coverage reports are automatically generated and uploaded to [Codecov](https://codecov.io/gh/moontai0724/npm-kickstart) on every CI run. You can view:
+
 - Line coverage
 - Branch coverage
 - Function coverage

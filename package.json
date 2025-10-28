@@ -2,6 +2,8 @@
   "name": "npm-kickstart",
   "version": "0.0.0-development",
   "description": "A TypeScript NPM package kickstart template with ESLint, Prettier, and automated releases",
+  "author": "moontai0724",
+  "license": "MIT",
   "type": "module",
   "main": "./dist/bundle/index.cjs",
   "module": "./dist/bundle/index.js",
@@ -49,8 +51,6 @@
     "kickstart",
     "npm-package"
   ],
-  "author": "moontai0724",
-  "license": "MIT",
   "devDependencies": {
     "@eslint/js": "^9.38.0",
     "@semantic-release/changelog": "^6.0.3",

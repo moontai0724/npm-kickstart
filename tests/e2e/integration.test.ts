@@ -1,5 +1,9 @@
 import { add, sum, multiply, greet, VERSION } from "../../src/index.js";
-import { randomInt, randomNumberArray, testFixtures } from "../utils/test-helpers.js";
+import {
+  randomInt,
+  randomNumberArray,
+  testFixtures,
+} from "../utils/test-helpers.js";
 
 describe("Module Integration Tests", () => {
   describe("Package exports", () => {
@@ -56,7 +60,7 @@ describe("Module Integration Tests", () => {
 
   describe("String operations integration", () => {
     it("should greet multiple names", () => {
-      const greetings = testFixtures.names.map(name => greet(name));
+      const greetings = testFixtures.names.map((name) => greet(name));
       expect(greetings).toHaveLength(4);
       expect(greetings[0]).toBe("Hello, Alice!");
       expect(greetings[1]).toBe("Hello, Bob!");
