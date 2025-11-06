@@ -1,4 +1,4 @@
-import { add, sum, multiply, greet, VERSION } from "../../src/index.js";
+import { add, greet, multiply, sum, VERSION } from "../../src/index.js";
 import {
   randomInt,
   randomNumberArray,

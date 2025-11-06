@@ -31,12 +31,12 @@ export function randomNumberArray(
  * Creates a test fixture with commonly used test data
  */
 export const testFixtures = {
-  numbers: {
-    positive: [1, 2, 3, 4, 5],
-    negative: [-1, -2, -3, -4, -5],
-    mixed: [1, -2, 3, -4, 5],
-    zeros: [0, 0, 0],
-    decimals: [1.5, 2.5, 3.5],
-  },
   names: ["Alice", "Bob", "Charlie", "David"],
+  numbers: {
+    decimals: [1.5, 2.5, 3.5],
+    mixed: [1, -2, 3, -4, 5],
+    negative: [-1, -2, -3, -4, -5],
+    positive: [1, 2, 3, 4, 5],
+    zeros: [0, 0, 0],
+  },
 };
