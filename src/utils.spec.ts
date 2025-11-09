@@ -1,4 +1,4 @@
-import { multiply, greet } from "./utils.js";
+import { greet, multiply } from "./utils.js";
 
 describe("multiply", () => {
   it("should multiply two positive numbers", () => {
