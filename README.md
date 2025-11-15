@@ -2,8 +2,8 @@
 
 A modern TypeScript project template with ESLint, Prettier, and automated releases.
 
-[![CI](https://github.com/moontai0724/npm-kickstart/actions/workflows/ci.yml/badge.svg)](https://github.com/moontai0724/npm-kickstart/actions/workflows/ci.yml)
-[![Release](https://github.com/moontai0724/npm-kickstart/actions/workflows/release.yml/badge.svg)](https://github.com/moontai0724/npm-kickstart/actions/workflows/release.yml)
+[![NPM Version](https://img.shields.io/npm/v/@moontai0724/npm-kickstart)](https://www.npmjs.com/package/@moontai0724/npm-kickstart)
+[![NPM Downloads](https://img.shields.io/npm/d18m/@moontai0724/npm-kickstart)](https://www.npmjs.com/package/@moontai0724/npm-kickstart)
 [![Documentation](https://github.com/moontai0724/npm-kickstart/actions/workflows/docs.yml/badge.svg)](https://github.com/moontai0724/npm-kickstart/actions/workflows/docs.yml)
 [![codecov](https://codecov.io/gh/moontai0724/npm-kickstart/branch/main/graph/badge.svg)](https://codecov.io/gh/moontai0724/npm-kickstart)
 
