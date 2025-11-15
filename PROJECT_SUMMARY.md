@@ -1,4 +1,4 @@
-# Project Summary: npm-kickstart
+# Project Summary: @moontai0724/npm-kickstart
 
 ## Overview
 
@@ -153,7 +153,7 @@ pnpm run docs:clean     # Remove documentation artifacts
 
 ## Package Information
 
-- **Name**: npm-kickstart
+- **Name**: @moontai0724/npm-kickstart
 - **Version**: 0.0.0-development (managed by semantic-release)
 - **License**: MIT
 - **Author**: 月太げつたい🌸
@@ -171,19 +171,19 @@ To enable automated NPM publishing:
 ### Installation
 
 ```bash
-npm install npm-kickstart
+npm install @moontai0724/npm-kickstart
 ```
 
 ### ESM
 
 ```typescript
-import { add, multiply, greet } from "npm-kickstart";
+import { add, multiply, greet } from "@moontai0724/npm-kickstart";
 ```
 
 ### CommonJS
 
 ```javascript
-const { add, multiply, greet } = require("npm-kickstart");
+const { add, multiply, greet } = require("@moontai0724/npm-kickstart");
 ```
 
 ## Verification Status

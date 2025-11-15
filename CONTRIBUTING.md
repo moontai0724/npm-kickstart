@@ -1,4 +1,4 @@
-# Contributing to npm-kickstart
+# Contributing to @moontai0724/npm-kickstart
 
 Thank you for your interest in contributing! This document provides guidelines for contributing to the project.
 
