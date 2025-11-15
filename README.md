@@ -261,7 +261,7 @@ The CI workflow runs on every push and pull request:
 5. Running tests with coverage
 6. Uploading coverage to Codecov
 
-Tested on Node.js versions: 20.x, 22.x
+Tested on Node.js versions: 20.x, 22.x, 24.x
 
 ### Continuous Deployment
 

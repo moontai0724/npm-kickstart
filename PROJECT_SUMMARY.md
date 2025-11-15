@@ -72,7 +72,7 @@ Three types of build outputs:
 #### CI Workflow (`.github/workflows/ci.yml`)
 
 - Triggers: Push to main, pull requests
-- Tests on: Node.js 20.x, 22.x
+- Tests on: Node.js 20.x, 22.x, 24.x
 - Steps:
   1. Type checking
   2. Linting
