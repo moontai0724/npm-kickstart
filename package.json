@@ -28,13 +28,13 @@
     "tag": "latest",
     "provenance": true
   },
-  "homepage": "https://montai0724.github.io/npm-kickstart/",
+  "homepage": "https://moontai0724.github.io/npm-kickstart/",
   "bugs": {
-    "url": "https://github.com/montai0724/npm-kickstart/issues"
+    "url": "https://github.com/moontai0724/npm-kickstart/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/montai0724/npm-kickstart.git"
+    "url": "git+https://github.com/moontai0724/npm-kickstart.git"
   },
   "scripts": {
     "build": "pnpm run build:bundle && pnpm run build:native",
