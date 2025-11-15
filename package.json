@@ -1,5 +1,5 @@
 {
-  "name": "npm-kickstart",
+  "name": "@moontai0724/npm-kickstart",
   "version": "0.0.0-development",
   "description": "A TypeScript NPM package kickstart template with ESLint, Prettier, and automated releases",
   "author": "moontai0724",
@@ -23,6 +23,19 @@
   "files": [
     "dist"
   ],
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest",
+    "provenance": true
+  },
+  "homepage": "https://montai0724.github.io/npm-kickstart/",
+  "bugs": {
+    "url": "https://github.com/montai0724/npm-kickstart/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/montai0724/npm-kickstart.git"
+  },
   "scripts": {
     "build": "pnpm run build:bundle && pnpm run build:native",
     "build:bundle": "tsup",

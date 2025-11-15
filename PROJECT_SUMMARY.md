@@ -1,4 +1,4 @@
-# Project Summary: npm-kickstart
+# Project Summary: @moontai0724/npm-kickstart
 
 ## Overview
 
@@ -72,7 +72,7 @@ Three types of build outputs:
 #### CI Workflow (`.github/workflows/ci.yml`)
 
 - Triggers: Push to main, pull requests
-- Tests on: Node.js 20.x, 22.x
+- Tests on: Node.js 20.x, 22.x, 24.x
 - Steps:
   1. Type checking
   2. Linting
@@ -153,7 +153,7 @@ pnpm run docs:clean     # Remove documentation artifacts
 
 ## Package Information
 
-- **Name**: npm-kickstart
+- **Name**: @moontai0724/npm-kickstart
 - **Version**: 0.0.0-development (managed by semantic-release)
 - **License**: MIT
 - **Author**: 月太げつたい🌸
@@ -171,19 +171,19 @@ To enable automated NPM publishing:
 ### Installation
 
 ```bash
-npm install npm-kickstart
+npm install @moontai0724/npm-kickstart
 ```
 
 ### ESM
 
 ```typescript
-import { add, multiply, greet } from "npm-kickstart";
+import { add, multiply, greet } from "@moontai0724/npm-kickstart";
 ```
 
 ### CommonJS
 
 ```javascript
-const { add, multiply, greet } = require("npm-kickstart");
+const { add, multiply, greet } = require("@moontai0724/npm-kickstart");
 ```
 
 ## Verification Status

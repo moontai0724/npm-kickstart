@@ -1,4 +1,4 @@
-# npm-kickstart
+# @moontai0724/npm-kickstart
 
 A modern TypeScript project template with ESLint, Prettier, and automated releases.
 
@@ -25,7 +25,7 @@ A modern TypeScript project template with ESLint, Prettier, and automated releas
 ## Installation
 
 ```bash
-npm install npm-kickstart
+npm install @moontai0724/npm-kickstart
 ```
 
 ## Usage
@@ -33,7 +33,7 @@ npm install npm-kickstart
 ### ESM (ES Modules)
 
 ```typescript
-import { add, multiply, greet } from "npm-kickstart";
+import { add, multiply, greet } from "@moontai0724/npm-kickstart";
 
 console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
@@ -43,7 +43,7 @@ console.log(greet("World")); // Hello, World!
 ### CommonJS
 
 ```javascript
-const { add, multiply, greet } = require("npm-kickstart");
+const { add, multiply, greet } = require("@moontai0724/npm-kickstart");
 
 console.log(add(2, 3)); // 5
 console.log(multiply(4, 5)); // 20
@@ -261,7 +261,7 @@ The CI workflow runs on every push and pull request:
 5. Running tests with coverage
 6. Uploading coverage to Codecov
 
-Tested on Node.js versions: 20.x, 22.x
+Tested on Node.js versions: 20.x, 22.x, 24.x
 
 ### Continuous Deployment
 

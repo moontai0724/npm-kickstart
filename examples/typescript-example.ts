@@ -1,4 +1,4 @@
-import { add, multiply, greet, VERSION } from 'npm-kickstart';
+import { add, multiply, greet, VERSION } from '@moontai0724/npm-kickstart';
 
 // Type-safe usage in TypeScript
 const sum: number = add(10, 20);

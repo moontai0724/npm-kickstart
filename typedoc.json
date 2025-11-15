@@ -4,7 +4,7 @@
   "entryPoints": ["src/index.ts"],
   "out": "docs",
   "plugin": [],
-  "name": "npm-kickstart",
+  "name": "@moontai0724/npm-kickstart",
   "readme": "README.md",
   "includeVersion": true,
   "excludePrivate": true,
