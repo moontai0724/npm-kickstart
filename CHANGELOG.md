@@ -1,3 +1,8 @@
+## <small>1.0.1 (2025-11-15)</small>
+
+* Merge pull request #21 from moontai0724/docs/update-npm-badge ([da1b1d8](https://github.com/moontai0724/npm-kickstart/commit/da1b1d8)), closes [#21](https://github.com/moontai0724/npm-kickstart/issues/21)
+* docs: replace pipeline badge with npm badge ([048000b](https://github.com/moontai0724/npm-kickstart/commit/048000b))
+
 ## 1.0.0 (2025-11-15)
 
 * docs: add comprehensive project summary ([9c0607f](https://github.com/moontai0724/npm-kickstart/commit/9c0607f))
