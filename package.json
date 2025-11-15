@@ -1,6 +1,6 @@
 {
   "name": "@moontai0724/npm-kickstart",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "description": "A TypeScript NPM package kickstart template with ESLint, Prettier, and automated releases",
   "author": "moontai0724",
   "license": "MIT",
